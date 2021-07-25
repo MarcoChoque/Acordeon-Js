@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+button.acordion{
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+button.acordion::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f055";
+    font-size: 14px;
+    float: right;
+}
+
+button.acordion.is-open::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f056";
+    font-size: 14px;
+    float: right;
+}
+
+button.acordion:hover, button.acordion.is-open{
+    background-color: #dddddd;
+}
+
+.acordion_contenido{
+    padding: 0 20px;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+
+
+
